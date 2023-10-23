@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="image/icon.png">
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Cost Calculation</title>
+  </head>
+  <body>
+    <header class="container center">
+      <h2 class=""> <span class="span1">توزيع أقسام الخدمات علي اقسام الإنتاج</span><br/><span class="span2">بأستخدام طريقة التوزيع الاجمالي </span></h2>
+    </header>
+    <div class="container div-scroll center">
+      <a href="#frist-table" class="btn center"> ابدأ المحاسبة</a>
+    </div>
+    <div id="frist-table" class="container">
+      <h2 class="center">ادخل التكاليف الصناعية</h2>
+      <table class="table table table-bordered">
+        
+        <tbody>
+          <tr>
+            <th scope="row">قسم الصيانة</th>
+            <td>
+              <input type="number" min="0" max="10000000" id="input1" placeholder="ادخل المبلغ " />
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">قسم البوفيه</th>
+            <td>
+              <input type="number" id="input2" min="0"max="10000000"placeholder="ادخل المبلغ " />
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">قسم الانتاج س</th>
+            <td>
+              <input type="number" id="input3" min="0" max="10000000" placeholder="ادخل المبلغ " />
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">قسم الانتاج ص</th>
+            <td>
+              <input type="number" id="input4" min="0" max="10000000" placeholder="ادخل المبلغ " />
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">قسم الانتاج ع</th>
+            <td>
+              <input type="number" id="input5" min="0" max="10000000"placeholder="ادخل المبلغ " />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="secand-tabel container">
+      <h2 class="center">ادخل البيانات الاحصائية</h2>
+   <table  class="table table-bordered">
+        <thead>
+        <th colspan="2" rowspan="2" scope="col">البيان</th>
+            <th scope="col"> قسم الصيانة </th>
+            <th scope="col">قسم البوفيه </th>
+            <th scope="col">قسم الانتاج س </th>
+            <th scope="col">قسم الانتاج ص </th>
+            <th scope="col">قسم الانتاج ع </th>
+        </thead>
+        <tr>
+        <th colspan="2" rowspan="1" scope="col">ساعات الصيانة </th>
+            <th scope="col"><input type="number" id="input6" min="0" max="10000000" placeholder="ادخل المبلغ "/></th>
+            <th scope="col"><input type="number" id="input7" min="0" max="10000000"  placeholder="ادخل المبلغ "/></th>
+            <th scope="col"><input type="number" id="input8" min="0" max="10000000"  placeholder="ادخل المبلغ "/></th>
+            <th scope="col"><input type="number" id="input9" min="0" max="10000000"  placeholder="ادخل المبلغ "/></th>
+            <th scope="col"><input type="number" id="input10"min="0" max="10000000"  placeholder="ادخل المبلغ " /></th>
+        </tr>
+        <tr>
+            <th colspan="2" rowspan="1" scope="col"> المساحة بالمتر </th>
+            <th scope="col"><input type="number" id="input11" min="0" max="10000000" placeholder="ادخل المبلغ " /></th>
+            <th scope="col"><input type="number" id="input12" min="0" max="10000000" placeholder="ادخل المبلغ " /></th>
+            <th scope="col"><input type="number" id="input13" min="0" max="10000000" placeholder="ادخل المبلغ " /></th>
+            <th scope="col"><input type="number" id="input14" min="0" max="10000000" placeholder="ادخل المبلغ " /></th>
+            <th scope="col"><input type="number" id="input15" min="0" max="10000000" placeholder="ادخل المبلغ " /></th>
+        </tr>
+        <tr>
+            <th colspan="2" rowspan="1" scope="col"> عدد العمال </th>
+            <th scope="col"><input type="number" id="input16" min="0" max="10000000" placeholder="ادخل المبلغ " /></th>
+            <th scope="col"><input type="number" id="input17" min="0" max="10000000" placeholder="ادخل المبلغ " /></th>
+            <th scope="col"><input type="number" id="input18" min="0" max="10000000" placeholder="ادخل المبلغ " /></th>
+            <th scope="col"><input type="number" id="input19" min="0" max="10000000" placeholder="ادخل المبلغ " /></th>
+            <th scope="col"><input type="number" id="input20" min="0" max="10000000" placeholder="ادخل المبلغ " /></th>
+        </tr>
+        <tr>
+            <th colspan="2" rowspan="1" scope="col"> ساعات العمل المباشرة  </th>
+            <th scope="col">--</th>
+            <th scope="col">--</th>
+            <th scope="col"><input type="number" id="input21" min="0" max="10000000" placeholder="ادخل المبلغ " /></th>
+            <th scope="col"><input type="number" id="input22" min="0" max="10000000" placeholder="ادخل المبلغ " /></th>
+            <th scope="col"><input type="number" id="input23" min="0" max="10000000" placeholder="ادخل المبلغ " /></th>
+        </tr>
+        </table>
+        
+    </div>
+    <div class="rent-table container">
+      <h2 class="center ">ادخل ايجار المصنع </h2>
+        
+            <table class="table table table-bordered">
+            
+                <tbody>
+                    <tr>
+                        <th scope="row"> ايجار المصنع </th>
+                        <td>
+                            <input type="number" id="input24" min="0" max="10000000" placeholder="ادخل المبلغ " />
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+    </div>
+    <div class="saved container center">
+        <button id="saved" ondblclick="handelTabel()" class="btn" >انشاء جدول التوزيع</button>
+    </div>
+    <div class="thied-table container" id="answer">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th colspan="2" rowspan="2" scope="col">البيان</th>
+            <th colspan="2" scope="col">اقسام الخدمات</th>
+            <th colspan="3" scope="col">اقسام الانتاج</th>
+            <th rowspan="2" scope="col">الاجمالى</th>
+          </tr>
+          <th scope="col">صيانة</th>
+          <th scope="col">بوفية</th>
+          <th scope="col">س</th>
+          <th scope="col">ص</th>
+          <th scope="col">ع</th>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row" colspan="2">تكلفة صناعية تخص القسم</th>
+
+            <td>
+              <p id="answer1"></p>
+            </td>
+            <td>
+              <p id="answer2"></p>
+            </td>
+            <td>
+              <p id="answer3"></p>
+            </td>
+            <td>
+              <p id="answer4"></p>
+            </td>
+            <td>
+              <p id="answer5"></p>
+            </td>
+            <td>
+              <p id="total1"></p>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" colspan="2">
+              نصيب القسم من التكلفة الصناعية العامة
+            </th>
+
+            <td>
+              <p id="answer6"></p>
+            </td>
+            <td>
+              <p id="answer7"></p>
+            </td>
+            <td>
+              <p id="answer8"></p>
+            </td>
+            <td>
+              <p id="answer9"></p>
+            </td>
+            <td>
+              <p id="answer10"></p>
+            </td>
+            <td>
+              <p id="total2"></p>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" colspan="2">تكليف صناعية قبل التوزيع</th>
+
+            <td>
+              <p id="answer11"></p>
+            </td>
+            <td>
+              <p id="answer12"></p>
+            </td>
+            <td>
+              <p id="answer13"></p>
+            </td>
+            <td>
+              <p id="answer14"></p>
+            </td>
+            <td>
+              <p id="answer15"></p>
+            </td>
+            <td>
+              <p id="total3"></p>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" colspan="2">
+              توزيع تكلفةاقسام الخدمات علي اقسام الانتاج
+            </th>
+
+            <td>
+              <p id="answer16"></p>
+            </td>
+            <td>
+            <p id="answer17"></p>
+            </td>
+            <td>
+              <p id="answer18"></p>
+            </td>
+            <td>
+              <p id="answer19"></p>
+            </td>
+            <td>
+              <p id="answer20"></p>
+            </td>
+            <td>
+              <p id="total4"></p>
+            </td>
+          </tr>
+
+          <tr>
+            <th scope="row" colspan="2">تكليف صناعية بعد التوزيع</th>
+
+            <td> <p id="answer21"></p></td>
+            <td> <p id="answer22"></p></td>
+            <td> <p id="answer23"></p></td>
+            <td> <p id="answer24"></p></td>
+            <td> <p id="answer25"></p></td>
+            <td> <p id="total5"></p></td>
+          </tr>
+          <tr>
+            <th scope="row" colspan="2"> ساعات العمل</th>
+
+            <td> <p id="answer26"></p></td>
+            <td> <p id="answer27"></p></td>
+            <td> <p id="answer28"></p></td>
+            <td> <p id="answer29"></p></td>
+            <td> <p id="answer30"></p></td>
+            <td> <p id="total6"></p></td>
+          </tr>
+          <tr>
+            <th scope="row" colspan="2">معدل التحميل الفعلي </th>
+
+            <td> <p id="answer31"></p></td>
+            <td> <p id="answer32"></p></td>
+            <td> <p id="answer33"></p></td>
+            <td> <p id="answer34"></p></td>
+            <td> <p id="answer35"></p></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="four-table container"> 
+      <h2 class="center">ادخل تكلفة المنتج </h2>
+      <table class="table table table-bordered">
+      
+        <tbody>
+          <tr>
+            <th scope="row">  ساعات العمل لانتاج المنتج في القسم س </th>
+            <td>
+              <input type="number" id="input25" min="0" max="10000000" placeholder="ادخل المبلغ " />
+            </td>
+          </tr>
+          <tr>
+            <th scope="row"> ساعات العمل لانتاج المنتج في القسم ص</th>
+            <td>
+              <input type="number" id="input26" min="0" max="10000000" placeholder="ادخل المبلغ " />
+            </td>
+          </tr>
+          <tr>
+            <th scope="row"> ساعات العمل لانتاج المنتج في القسم ع </th>
+            <td>
+              <input type="number" id="input27" min="0" max="10000000" placeholder="ادخل المبلغ " />
+            </td>
+          </tr>
+        </tbody>
+      </table></div>
+      <div class="saved container center">
+        <button id="saved" onclick="handelAnswer()" class="btn">حساب تكلفة المنتج </button>
+      </div><div class="container">
+          <table class="table table table-bordered ">
+        
+            <tbody>
+              <tr>
+                <th scope="row"> تكلفة المنتح في القسم س </th>
+                <td>
+                  <p id="answer36"></p>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">تكلفة المنتح في القسم ص</th>
+                <td>
+                <p id="answer37"></p>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row"> تكلفة المنتح في القسم ع </th>
+                <td>
+                  <p id="answer38"></p>
+                </td>
+              </tr>
+                <tr>
+                  <th scope="row">اجمالي التكلفة المنتج </th>
+                  <td>
+              <p id="total7"></p></td>
+                </tr>
+            </tbody>
+          </table>
+</div>
+
+<script src="js/bootstrap.bundle.js"></script>
+<script src="js/main.js"></script>
+  </body>
+</html>
